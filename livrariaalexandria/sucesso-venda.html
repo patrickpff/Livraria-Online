@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title>Livraria Alexandria</title>
+	<link rel = 'stylesheet' type = 'text/css' href = 'CSS/estilos.css'/>
+	<link rel = 'stylesheet' type = 'text/css' href = 'CSS/menuslideshow.css'/>
+	<link rel = 'stylesheet' type = 'text/css' href = 'CSS/carrinhodropdown.css'/>
+</head>
+
+<body>
+	<div>
+		<div class = headerdiv>
+			<a href = 'index.html'><img src = 'imagens/LOGO-Alexandria-menor.png' alt = "Livraria Alexandria" class = totitle></a>
+			<p class = totitleText>Telefone para contato: (xxx) 3***-****</p>
+			<script language='javascript'>
+				window.open('Back-end/geraNotaPdf.php', '_blank');
+			</script>
+		</div>
+		<div>
+			<div>
+				<form action = 'Back-end/trataBuscas.php' method = 'get'>
+					<fieldset>
+						<!-- <label for = 'busca'><img src = imagens/search.png></label> -->
+						<input type = 'text' id = 'busca' name = 'busca' placeholder = 'Digite o nome do livro ou autor' class = 'busca'/>
+						<input type = 'submit' value = '' class = 'butaoBusca'/>
+					</fieldset>
+				</form>
+			</div>
+			<div id = 'popup'>
+				<a href = 'carrinho.php'>Meu carrinho
+					<span>
+						<iframe src = "Back-end/iframe.php?acao=show">
+						
+						<a href = '#'></iframe>
+					</span>
+				</a>				
+			</div>
+		</div>
+		<br/>
+		<div style = "
+						position: absolute;
+						top: 350px;
+						left: 450px;
+						">
+			<label style = "
+							font-family: 'Arial';
+							font-size: 45;
+							">
+					Venda efetuada com sucesso!
+			</label>
+		</div>
+	</div>
+</body>
+
+</html>

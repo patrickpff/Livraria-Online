@@ -1,0 +1,38 @@
+﻿<html>
+<head>
+	<title>Livraria Alexandria - Login</title>
+	<link rel = 'stylesheet' type = 'text/css' href = 'CSS/estilos.css'/>
+	<link rel = 'stylesheet' type = 'text/css' href = 'CSS/estilo_login.css'/>
+</head>
+
+<body>
+	<div>
+		<div class = headerdiv>
+			<a href = index.html><img src = imagens/LOGO-Alexandria-menor.png alt = "Livraria Alexandria" class = totitle></a>
+			<p class = totitleText>Telefone para contato: (xxx) 3***-****</p>
+		</div>
+		<form action = '' method = 'get'>
+				<fieldset>
+					<!-- <label for = 'busca'><img src = imagens/search.png></label> -->
+					<input type = 'text' id = 'busca' name = 'busca' placeholder = 'Digite o nome do livro ou autor' class = 'busca'/>
+					<input type = 'submit' value = '' class = 'butaoBusca'/>
+				</fieldset>
+			</form>
+		<div class = 'logTodiv'>
+			<form action = 'Back-end/trataInteracoes.php?acao=fazerLogin' method = 'post'>
+				<legend>Login</legend>
+				<fieldset class = 'login'>
+					<label for = 'username' class = 'loginLabel'>Usuário:</label>
+					<input type = 'text' id = 'username' name = 'usuario' class = 'posicaoUsername' placeholder = 'Digite o nome de usuário' required/><br/>
+					<label for = 'password' class = 'passwdLabel'>Senha:</label>
+					<input type = 'password' id = 'password' name = 'senha' class = 'posicaoPasswd' placeholder = 'Digite a senha' required><br/>
+					
+					<label class = 'criar'><a href = 'criarUser.html' class = 'cria'>Criar novo usuário</a></label>
+					<input type = 'submit' value = 'Entrar' class = 'entra'/>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>

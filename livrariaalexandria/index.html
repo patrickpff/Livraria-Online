@@ -1,0 +1,102 @@
+﻿<html>
+<head>
+	<title>Livraria Alexandria</title>
+	<link rel = 'stylesheet' type = 'text/css' href = 'CSS/estilos.css'/>
+	<link rel = 'stylesheet' type = 'text/css' href = 'CSS/menuslideshow.css'/>
+	<link rel = 'stylesheet' type = 'text/css' href = 'CSS/carrinhodropdown.css'/>
+</head>
+
+<body>
+	<div>
+		<div class = headerdiv>
+			<img src = imagens/LOGO-Alexandria-menor.png alt = "Livraria Alexandria" class = totitle>
+			<p class = totitleText>Telefone para contato: (xxx) 3***-****</p>
+		</div>
+		<div>
+			<div>
+				<form action = 'Back-end/trataBuscas.php' method = 'get'>
+					<fieldset>
+						<input type = 'text' id = 'busca' name = 'busca' placeholder = 'Digite o nome do livro ou autor' class = 'busca'/>
+						<input type = 'submit' value = '' class = 'butaoBusca'/>
+					</fieldset>
+				</form>
+			</div>
+			<div id = 'popup'>
+				<a href = 'carrinho.php'>Meu carrinho
+					<span>
+						<iframe src = "Back-end/iframe.php?acao=show">
+						
+						<a href = '#'></iframe>
+					</span>
+				</a>				
+			</div>
+		</div>
+		<br/>
+		<div>
+			<div id = 'saudacao'>
+				<iframe src = 'Back-end/saudacao.php' name = 'iframe-saudacao'></iframe>
+			</div>
+			<div id = 'menulateral'>
+				<label class = 'titlelateral'>Categorias:</label><br/><br/>
+				<iframe src = 'Back-end/trataInteracoes.php?acao=carregaCategorias' class = 'iframelateral'></iframe>
+			</div>
+			<div class = 'container mostra slideshow'> <!-- container para menu de transição -->
+				<div id = 'content-slider'>
+					<div id = 'slider'>
+						<div id = 'mask'>
+							<ul>
+								<li id = 'first' class = 'firstanimation'>
+									<a href = "Back-end/trataBuscas.php?busca=Colecao: Guerra dos Tronos"> <img src = 'Imagens/exemplo/01.jpg'/ alt = '01' class = 'menuslideshow' /> </a>
+									<div class = 'tooltip'><h1>As Crônicas do Gelo e do Fogo</h1></div>
+								</li>
+								<li id = 'second' class = 'secondanimation'>
+									<a href = 'Back-end/trataBuscas.php?busca=Colecao: O guia do mochileiro das galaxias'> <img src = 'Imagens/exemplo/02.jpg' alt = '02' class = 'menuslideshow'/> </a>
+									<div class = 'tooltip'><h1>Guia do Mochileiro das Galáxias</h1></div>
+								</li>
+								<li id = 'third' class = 'thirdanimation'>
+									<a href = 'Back-end/trataBuscas.php?busca=Colecao: Harry Potter - edicao limitada'> <img src = 'Imagens/exemplo/03.jpg' alt = '03' class = 'menuslideshow'/> </a>
+									<div class = 'tooltip'><h1>Coleção: Harry Potter</h1></div>
+								</li>
+								<li id = 'fourth' class = 'fourthanimation'>
+									<a href = 'Back-end/trataBuscas.php?busca=Colecao: As Brumas de Avalon'> <img src = 'Imagens/exemplo/04.jpg' alt = '04' class = 'menuslideshow'/> </a>
+									<div class = 'tooltip'><h1>As Brumas de Avalon</h1></div>
+								</li>
+								<li id = 'fifth' class = 'fifthanimation'>
+									<a href = 'Back-end/trataBuscas.php?busca=Colecao: A busca do Graal'> <img src = 'Imagens/exemplo/05.jpg' alt = '05' class = 'menuslideshow'/> </a>
+									<div class = 'tooltip'><h1>A Busca do Graal: Trilogia</h1></div>
+								</li>
+								<div class = 'progress-bar'></div>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = 'submostra'>
+				<ul>
+					<li>
+						<a href = 'Back-end/trataBuscas.php?busca=arte da guerra'>
+							<img src = 'Imagens/Livros/a-arte-da-guerra.jpg' style = 'height:120px;'/>
+						</a>
+					</li>
+					<li>
+						<a href = 'Back-end/trataBuscas.php?busca=monge'>
+							<img src = 'Imagens/Livros/monte-executivo.jpg' style = 'height:120px;'/>
+						</a>
+					</li>
+					<li>
+						<a href = 'Back-end/trataBuscas.php?busca=senhor da fantasia'>
+							<img src = 'Imagens/Livros/tolkien-senhor-da-fantasia.jpg' style = 'height:120px;'/>
+						</a>
+					</li>
+					<li>
+						<a href = 'Back-end/trataBuscas.php?busca=edicao comemorativa 75 anos'>
+							<img src = 'Imagens/Livros/o-hobbit-edicao-comemorativa-75-anos.jpg' style = 'height:120px;'/>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

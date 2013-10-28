@@ -1,0 +1,150 @@
+﻿<html>
+
+<head>
+	<title>Livraria Alexandria - Criar novo usu�rio</title>
+	<link rel = 'stylesheet' type = 'text/css' href = 'CSS/estilos.css'/>
+	<link rel = 'stylesheet' type = 'text/css' href = 'CSS/cadastro.css'/>
+</head>
+
+<body>
+	<div>
+		<div class = headerdiv>
+			<a href = index.html><img src = imagens/LOGO-Alexandria-menor.png alt = "Livraria Alexandria" class = totitle></a>
+			<p class = totitleText>Telefone para contato: (xxx) 3***-****</p>
+		</div>
+		<form action = '' method = 'get'>
+				<fieldset>
+					<!-- <label for = 'busca'><img src = imagens/search.png></label> -->
+					<input type = 'text' id = 'busca' name = 'busca' placeholder = 'Digite o nome do livro ou autor' class = 'busca'/>
+					<input type = 'submit' value = '' class = 'butaoBusca'/>
+				</fieldset>
+			</form>
+		<div class = ''>
+			<form action = 'Back-end/trataInteracoes.php?acao=criarUser' method = 'post'>
+				<fieldset class = 'toCadastro'>
+					<legend class = 'titleCadastro'><img src = 'imagens/pessoal.png'/>Informações sobre cadastro:</legend>
+					<label for = 'nome' class = 'labelsCadastro'>Nome completo:
+					<input type = 'text' id = 'nome' name = 'name' class = 'camposCadastro' required/><br/><br/>
+					</label>
+					
+					<label for = 'username' class = 'labelsCadastro'>Nome de usuário:
+					<input type = 'text' id = 'username' name = 'username' class = 'camposCadastro' required/>
+					</label>
+					<br/><br/>
+					
+					<label for = 'dataNasc' class = 'labelsCadastro'>Data de nascimento:
+					<input type = 'date' id = 'dataNasc' name = 'dataNascimento' class = 'campoCadastroDT' required/>
+					</label>
+					
+					<label for = 'sexo' class = 'labelCadastroSexo'>Sexo:
+					<select name='sexo'class = 'campoSexo' required>
+						<option selected value=''>Selecione</option>
+						<option value='m'>Masculino</option>
+						<option value='f'>Feminino</option>
+					</select>
+					</label>
+					
+					<br/><br/>
+					
+					<label for = 'email' class = 'labelsCadastro'>E-mail:
+					<input type = 'email' id = 'email' name = 'email' class = 'camposCadastro' required/>
+					</label>
+					
+					<br/><br/>
+					
+					<label for = 'password' class = 'labelsCadastro'>Senha:
+					<input type = 'password' id = 'password' name = 'senha' class = 'camposCadastro' required>
+					</label>
+					
+					<br/><br/>
+					
+					<label for = 'retypepassword' class = 'labelsCadastro'>Repetir senha:
+					<input type = 'password' id = 'retypepassword' name = 'resenha' class = 'camposCadastro' required>
+					</label>
+					
+					<br/><br/>
+					
+					<label for = 'CPF' class = 'labelsCadastro'>CPF:
+					<input type = 'text' id = 'CPF' name = 'CPF' class = 'camposCadastroS' required/>
+					</label>
+					
+					<br/><br/>
+					<hr/>
+					
+					<legend class = 'titleCadastro'>Endereço:</legend>
+					
+					<br/><br/>
+					
+					<label for = 'CEP' class = 'labelsCadastro'>CEP:
+					<input type = 'text' id = 'CEP' name = 'CEP' class = 'camposCadastroS' required/>
+					</label>
+					
+					<br/><br/>
+					
+					<label for = 'endereco' class = 'labelsCadastro'>Endereço:
+					<input type = 'text' id = 'endereco' name = 'endereco' class = 'camposCadastro' required/>
+					</label>
+					
+					<br/><br/>
+					
+					<label for = 'bairro' class = 'labelsCadastro'>Bairro:
+					<input type = 'text' id = 'bairro' name = 'bairro' class = 'camposCadastroS' required/>
+					</label>
+					
+					<label for = 'numero' class = 'cadastroNumero'>Número:
+					<input type = 'text' id = 'numero' name = 'numero' class = '' required/>
+					</label>	
+					
+					<br/><br/>
+					
+					<label for = 'cidade' class = 'labelsCadastro'>Cidade:
+					<input type = 'text' id = 'cidade' name = 'cidade' class = 'camposCadastroS' required/>
+					</label>
+					
+					<label for = 'estado' class = 'estado'>Estado:
+					<select name='estado'class = 'camposCadastro' required>
+						<option selected value='ac'>AC</option>
+						<option value='al'>AL</option>
+						<option value='ap'>AP</option>
+						<option value='am'>AM</option>
+						<option value='ba'>BA</option>
+						<option value='ce'>CE</option>
+						<option value='df'>DF</option>
+						<option value='es'>ES</option>
+						<option value='go'>GO</option>
+						<option value='ma'>MA</option>
+						<option value='mt'>MT</option>
+						<option value='ms'>MS</option>
+						<option value='mg'>MG</option>
+						<option value='pa'>PA</option>
+						<option value='pb'>PB</option>
+						<option value='pr'>PR</option>
+						<option value='pe'>PE</option>
+						<option value='pi'>PI</option>
+						<option value='rj'>RJ</option>
+						<option value='rn'>RN</option>
+						<option value='rs'>RS</option>
+						<option value='ro'>RO</option>
+						<option value='rr'>RR</option>
+						<option value='sc'>SC</option>
+						<option value='sp'>SP</option>
+						<option value='se'>SE</option>
+						<option value='to'>TO</option>
+					</select>
+					</label>
+					
+					<br/><br/>
+					
+					<label for = 'telefone' class = 'labelsCadastro'>Telefone:
+					<input type = 'tel' id = 'telefone' name = 'telefone' class = 'camposCadastroS' required/>
+					</label>
+					<br/><br/>
+				</fieldset>
+				<input type = 'submit' value = 'Entrar' class = ''/>
+				<input type = 'submit' value = 'Cancelar' class = ''/>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>

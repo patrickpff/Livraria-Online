@@ -1,0 +1,54 @@
+input.camposCadastro {
+	position: absolute;
+	width:500px;
+	left: 150px
+}
+
+input.camposCadastroS{
+	position: absolute;
+	width: 250px;
+	left: 150px;
+}
+
+label.cadastroNumero {
+	position: relative;
+	left: 405px;
+}
+
+label.estado {
+	position: relative;
+	left: 510px;
+}
+
+.campoCadastroDT {
+	position: absolute;
+	width:150px;
+	left: 150px;
+}
+
+label.labelsCadastro {
+	position: relative;
+	vertical-align: middle;
+}
+
+select.campoSexo {
+	position: relative;
+	width: 200px;
+	left: 20px;
+}
+
+label.labelCadastroSexo {
+	position: relative;
+	vertical-align: middle;
+	left: 280px;
+}
+
+fieldset.toCadastro {
+	font-size: 12px;
+	font-family: Arial;
+}
+
+legend.titleCadastro{
+	font-size: 20px;
+	color: #0489B1;
+}

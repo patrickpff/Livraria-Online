@@ -1,0 +1,206 @@
+﻿.headerdiv{
+	height: 120px;
+	width: 100%;
+}
+
+input.busca {
+	position: relative;
+	top:-5px;
+	width: 76%;
+	height:35px;
+	border-style: double;
+	border-radius: 15px;
+}
+
+input.butaoBusca {
+	background: #FFF url(../Imagens/busca.png);
+	position: relative;
+	top:5px;
+	width: 35px;
+	height: 35px;
+	border-style: none;
+}
+
+img.totitle{
+	position: absolute;
+	top: 37px;
+}
+
+p.totitleText{
+	/*vertical-align: middle;*/
+	position: relative;
+	top: 50%;
+	text-align: center;
+	font-family: "Rockwell Extra Bold", Arial;
+	font-size: 15px;
+}
+
+label.titlelateral {
+	font-size: 15px;
+	color: #6E7B8B;
+}
+
+.logTodiv {
+	width: 300px;
+	height: 105px;
+	left: 40%;
+	top: 50%;
+	position: absolute;
+	border-style: groove;
+}
+
+.login {
+	font-family: Arial;
+	width: 300px;
+	height: 75px;
+	border-style: none;
+}
+
+.entra {
+	position: absolute;
+	top: 50px;
+	left: 230px;
+	top: 80px;
+}
+
+.loginLabel {
+	border-style: none;
+	position: absolute;
+}
+
+.passwdLabel{
+	border-style: none;
+	position: absolute;
+	top: 55px;
+}
+
+a.cria {
+	text-decoration: none;
+	color: #555;
+}
+
+.posicaoPasswd {
+	position: absolute;
+	top:50px;
+	left: 85px;
+	width: 200px;
+	/*border-style: none;*/
+}
+
+#saudacao {
+	height: 70px;
+	width: 200px;
+	text-align: center;
+	font-family: "Rockwell Extra Bold", Arial;
+	font-size: 15px;
+	color: #E8E8E8;
+	/*background-color: #666;*/
+}
+
+#saudacao iframe, a{
+	text-decoration: none;
+}
+
+#menulateral {
+	border-style: none;
+	border-color: #AAA;
+	background-color: #E8E8E8;
+	height: 100%;
+	width: 200px;
+	font-family: Arial;
+	text-align: center;
+	border-radius: 15px;
+}
+#menulateral iframe, a{
+	text-decoration: none;
+	color: #607B8B;
+	vertical-align: center;
+	padding: 0;
+	width: 200px;
+	height: 25px;
+	display: block;
+}
+
+#menulateral iframe, a:hover {
+	color: #FFFFFF;
+	-moz-transition: 0.3s linear;
+	-webkit-transition: 0.3s linear;
+	-o-transition: 0.3s linear;
+}
+
+#menulateral iframe{
+	text-decoration: none;
+}
+
+#menulateral .iframelateral {
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+}
+
+#menulateral iframe, a {
+	border-bottom: 1px solid;
+	border-top: 1px solid;
+	width: 100%;
+	height: 20px;
+	font-size: 13px;
+	-moz-transition: 0.3s linear;
+	-webkit-transition: 0.3s linear;
+	-o-transition: 0.3s linear;
+}
+
+.linkslaterais:hover{
+	background-color: #888;
+	width: 200px;
+	text-align: center;
+	-moz-transition: 0.3s linear;
+	-webkit-transition: 0.3s linear;
+	-o-transition: 0.3s linear;
+}
+
+#menulateral .menulateral iframe, a {
+	display: block;
+	width: 190px;
+}
+
+div.mostra {
+	position: absolute;
+	top: 210px;
+	left: 215px;
+	width: 1350px;
+	height:450px;
+	background: blue;
+}
+
+div.submostra{
+	background-color: #E8E8E8;
+	position: absolute;
+	top: 680px;
+	left: 215px;
+	width: 83%;
+	height: 175px;
+}
+
+div.submostra li{
+	position: relative;
+	top: 25px;
+	list-style-type: none;
+	display: inline;
+	float: left;
+	width:200px;
+	padding-left: 10px;
+}
+
+ul.menuTransicao {
+	list-style-position: outside;
+	list-style-type: none;
+}
+
+#result {
+	background-color: #E8E8E8;
+	position: absolute;
+	left: 210px;
+	top: 200px;
+	width: 1350px;
+	height: 100%;
+}

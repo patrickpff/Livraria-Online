@@ -1,0 +1,21 @@
+.login {
+	font-family: Arial;
+	width: 300px;
+	height: 75px;
+	border-style: none;
+}
+
+.criar {
+	font-size: 12px;
+	position: absolute;
+	top: 80px;
+	left: 100px;
+}
+
+.posicaoUsername {
+	position: absolute;
+	left: 85px;
+	top:23px;
+	width: 200px;
+	/*border-style: none;*/
+}
